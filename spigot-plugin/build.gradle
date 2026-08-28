@@ -1,0 +1,13 @@
+apply plugin: 'java'
+
+group = 'jp.example'
+version = '0.1.0'
+sourceCompatibility = targetCompatibility = '1.7'
+
+repositories {
+    mavenCentral()
+    maven { url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' }
+    // Historical mirror: Spigot removed the 1.7.10 snapshot from its current repository.
+    maven { url = 'https://maven.elmakers.com/repository/' }
+}
+dependencies { compile 'org.spigotmc:spigot-api:1.7.10-R0.1-SNAPSHOT' }

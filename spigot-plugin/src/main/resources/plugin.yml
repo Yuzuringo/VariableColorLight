@@ -1,0 +1,12 @@
+name: VariableColorLight
+main: jp.example.variablecolorlight.spigot.VariableColorLightPlugin
+version: 0.1.0
+author: Codex
+commands:
+  vcl:
+    description: Configure the Variable Color Light being looked at
+    usage: /vcl mode <kelvin|rgb> | kelvin <1000..20000> | rgb <r> <g> <b> | level <0..15>
+    permission: variablecolorlight.edit
+permissions:
+  variablecolorlight.edit:
+    default: op

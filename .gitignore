@@ -1,0 +1,24 @@
+# Gradle / ForgeGradle generated files
+.gradle/
+.tools/
+build/
+spigot-plugin/build/
+out/
+run/
+
+# Local dependency archives and IDE files
+gradle-*.zip
+*.class
+*.log
+.idea/
+*.iml
+.vscode/
+
+# Third-party shader packs used only for local compatibility testing.
+# They remain the property of their respective authors and are not redistributed.
+shader-work/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+desktop.ini

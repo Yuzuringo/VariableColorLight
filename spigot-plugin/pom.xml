@@ -1,0 +1,6 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"><modelVersion>4.0.0</modelVersion>
+  <groupId>jp.example</groupId><artifactId>VariableColorLight-Spigot</artifactId><version>0.1.0</version><packaging>jar</packaging>
+  <properties><maven.compiler.source>1.7</maven.compiler.source><maven.compiler.target>1.7</maven.compiler.target></properties>
+  <repositories><repository><id>spigot-repo</id><url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url></repository></repositories>
+  <dependencies><dependency><groupId>org.spigotmc</groupId><artifactId>spigot-api</artifactId><version>1.7.10-R0.1-SNAPSHOT</version><scope>provided</scope></dependency></dependencies>
+</project>
