@@ -1,10 +1,10 @@
-# BBCL — Variable Brightness and Color Light (Minecraft 1.7.10)
+# VariableColorLight
 
 Forge 1.7.10 mod for independently adjustable RGB/color-temperature lighting. Each block stores its settings in a `TileEntity`; entity lights store the same data in entity NBT. A runtime shader adapter uploads the nearest 256 active lights when OptiFine/ShadersMod or Angelica binds a supported GLSL program.
 
 ## プロジェクト概要
 
-- **名称:** BBCL (Variable Brightness and Color Light)
+- **名称:** VariableColorLight
 - **製作者:** Yuzuringo
 - **用途:** 光量とRGB／色温度を光源ごとに設定できるブロック光源・Entity光源を追加します。建築照明、街灯、鉄道設備、舞台照明、景観演出などに利用できます。
 - **対応Minecraft:** 1.7.10
@@ -25,11 +25,11 @@ BBCLはシェーダーパックを直接書き換えず、対応するGLSLソー
 - **Recognized shader families:** Complementary Shaders v4.6 family, SEUS Renewed 1.0.1 and SEUS v10.2
 - **License:** MIT
 
-## BBCL block and GUI
+## VCL block and GUI
 
-- BBCL is its own registered Forge block (`variablecolorlight:bbcl`) and stores settings in its own TileEntity NBT.
-- Right-click BBCL to open the standard Minecraft GUI. Choose Kelvin or direct RGB mode, enter brightness 0–15 and color values, preview the result, then press Save.
-- Like a barrier block, placed BBCL blocks are invisible unless the local player is holding a BBCL item (or currently editing one). Collision, selection, saved settings, and light emission remain active while invisible.
+- VCL is its own registered Forge block (`variablecolorlight:bbcl`) and stores settings in its own TileEntity NBT.
+- Right-click VCL to open the standard Minecraft GUI. Choose Kelvin or direct RGB mode, enter brightness 0–15 and color values, preview the result, then press Save.
+- Like a barrier block, placed VCL blocks are invisible unless the local player is holding a VCL item (or currently editing one). Collision, selection, saved settings, and light emission remain active while invisible.
 - Forge numeric commands (look at a lamp): `/vcl kelvin 4200`, `/vcl rgb 255 80 20`, `/vcl mode kelvin`, `/vcl mode rgb`, `/vcl level 12`.
 
 ## Without a shader pack
@@ -38,7 +38,7 @@ The lamp has a client-side emissive core rendered in its configured Kelvin color
 
 ## Shader integration
 
-The stock Minecraft lightmap contains intensity only, so changing a pack's global torch color cannot create multiple simultaneous temperatures. BBCL intercepts recognized shader sources in memory and injects its lighting pass without modifying the shader-pack archive on disk.
+The stock Minecraft lightmap contains intensity only, so changing a pack's global torch color cannot create multiple simultaneous temperatures. VCL intercepts recognized shader sources in memory and injects its lighting pass without modifying the shader-pack archive on disk.
 
 Runtime adapters currently cover the tested Complementary v4.6 family, SEUS Renewed 1.0.1 and SEUS v10.2 paths under OptiFine/ShadersMod and Angelica. The selected shader pack on disk is not changed, and already-patched sources are detected to prevent duplicate insertion. Exact compatibility can vary between shader-pack releases.
 
