@@ -53,6 +53,7 @@ Do not redistribute patched SEUS or Complementary files unless their license per
 ## Build
 
 Use a Java 8 JDK and Gradle 2.14.1; ForgeGradle 1.2 is too old for Java 21. Run `gradle setupDecompWorkspace build`. Both the Forge mod and Spigot plugin have been compiled successfully with OpenJDK 8 in this workspace. ForgeGradle's retired Mojang S3 URLs require the official 1.7.10 metadata/client/server artifacts to be pre-seeded in its cache; the build disables only those two obsolete download tasks.
+This mod was coded and implemented by Codex, while Yuzuringo handled functional testing and prompt creation.
 
 The Forge dedicated server may load the main jar safely: all Minecraft client and OpenGL references are behind a sided proxy. Install the Forge jar on the dedicated server and every participating client.
 
